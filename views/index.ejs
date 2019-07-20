@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/stylesheets/bar.css">
+  <link rel="stylesheet" href="/stylesheets/style.css"> 
+  <link rel="stylesheet" href="/stylesheets/search.css">
+</head>
+<body>
+  <div class="header">
+    <h1><%= title %></h1>
+    <span>当你在注视屏幕的时候，周老师也在注视着你。</span>
+  </div>
+
+  <div class="searchDiv" onkeydown="monitor(event)">
+    <div class="searchBorder">
+      <div class="searchInput">
+        <div class="vdLsw"></div>
+        <input class="gLFyf" id="content" title="修改地址栏 '?engines=(Bing/Baidu/Google)' 修改默认搜索引擎">
+      </div>
+    </div> 
+  </div> 
+
+  <div class="navDiv">
+    <nav class="nav">
+      <% 
+      var color = [
+      "red", 
+      "orange",
+      "green",
+      "blue",
+      "rebeccapurple",
+      "purple",
+      "pink",
+      ];
+      %>
+      <% for (var i in nav) { %>
+      <a target="_blank" href="<%= nav[i].link %>" class="nav-item is-active" active-color="<%= color[Math.floor(Math.random() * color.length)] %>"><%= nav[i].name %></a>
+      <% } %>
+      <span class="nav-indicator"></span>
+    </nav>
+  </div>
+
+  <script src="/javascripts/bar.js"></script>
+  <script src="/javascripts/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+@mixin MacType($font) {
+  font-weight: 600 !important;
+  font-family: $font !important;
+  text-shadow: 0.02em 0.02em 0.03em #b8b8b8 !important;
+}
+* {
+  margin: 0px;
+}
+
+body {
+  margin-top: 10%;
+  text-align: center;
+}
+.header {
+  padding-bottom: 20px;
+  h1 {
+    @include MacType("PristinaStd");
+    font-size: 128px;
+  }
+  span {
+    color: gray;
+  }
+}
+@font-face {
+	font-family: "PristinaStd";
+	src: url('/fonts/PristinaStd.ttf');
+}
+a {
+  text-decoration: none;
+  color: black;
+}

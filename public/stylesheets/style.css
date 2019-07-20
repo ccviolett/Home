@@ -1,0 +1,26 @@
+* {
+  margin: 0px; }
+
+body {
+  margin-top: 10%;
+  text-align: center; }
+
+.header {
+  padding-bottom: 20px; }
+  .header h1 {
+    font-weight: 600 !important;
+    font-family: "PristinaStd" !important;
+    text-shadow: 0.02em 0.02em 0.03em #b8b8b8 !important;
+    font-size: 128px; }
+  .header span {
+    color: gray; }
+
+@font-face {
+  font-family: "PristinaStd";
+  src: url("/fonts/PristinaStd.ttf"); }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+/*# sourceMappingURL=style.css.map */
